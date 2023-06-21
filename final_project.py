@@ -10,8 +10,16 @@ Delivery Date : 21-06-2023
 # course name (user_input) and
 # course mark (user_input)
 
+import uuid
+myuuid = uuid.uuid4()
+print('Your UUID is: ' + str(myuuid))
 
-class Student:
+class Course():
+    def __init__(self, name, mark):
+        self.name = name
+        self.mark  = mark
+        self.course_id = myuuid
+
     # TODO 3 define static variable indicates total student count
 
     # TODO 4 define a constructor which includes
